@@ -1,7 +1,5 @@
 #!/bin/bash
-remplacement='sed -e s/\[[[:alpha:][:space:]_-]*\][[:space:]\.]*//'
 for f in *.*
 do
-    echo "transforme" $f "en " $(echo $f | $remplacement)
-    mv "$f" "$(echo $f | $remplacement)"
+    mv "$f" "$(echo $f | sed  -e 's/\[[^]]*] *//g')"
 done
