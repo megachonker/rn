@@ -26,7 +26,5 @@ rn
 
 ## Notes:
 
-- plus  d'optimisation syntax?
 - ajouter la recursivitée
 - choisire quoi suprimer
-
